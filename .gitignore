@@ -50,3 +50,6 @@ publication-audit/
 !.streamlit/
 .streamlit/*
 !.streamlit/config.toml
+# Historical demo artifacts remain local; retain only the upstream notice
+demo/*
+!demo/CBIG_LICENSE.txt
