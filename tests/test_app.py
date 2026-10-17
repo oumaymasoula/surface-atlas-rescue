@@ -22,7 +22,7 @@ def test_conversion_and_session_isolation(monkeypatch):
     monkeypatch.setenv('ATLAS_RESCUE_WB',wb)
     monkeypatch.setenv('ATLAS_RESCUE_DATA',str(ROOT/'reference-data'))
     a=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
-    a.selectbox[0].select('destrieux2009').run()
+    a.selectbox(key='atlas').select('destrieux2009').run()
     a.checkbox[0].check().run();a.button[0].click().run(timeout=60)
     assert not a.exception and not a.error and a.success
     report=a.session_state['result'][0]
@@ -32,7 +32,7 @@ def test_conversion_and_session_isolation(monkeypatch):
     b=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
     assert not b.success
     assert 'result' not in b.session_state
-    a.selectbox[1].select('R').run()
+    a.selectbox(key='hemisphere').select('R').run()
     assert 'result' not in a.session_state
     assert not a.success
 
@@ -84,3 +84,36 @@ def test_schaefer_conversion_from_public_download_profile(monkeypatch):
     report = app.session_state['result'][0]
     assert report['source_parcels_present'] == report['target_parcels_present'] == 50
     assert all(report['checks'].values())
+
+
+@pytest.mark.parametrize('atlas', ['schaefer100-7net', 'desikan2006', 'destrieux2009'])
+def test_catalog_marks_missing_selected_hemisphere(monkeypatch, tmp_path, atlas):
+    from streamlit.testing.v1 import AppTest
+    import catalog
+    import converter
+    # Isolate input availability without modifying any real atlas/reference files.
+    right = tmp_path/'R.annot'
+    right.touch()
+    monkeypatch.setattr(catalog, 'source_file', lambda key, hemi: tmp_path/f'{hemi}.annot')
+    monkeypatch.setattr(converter, 'check_workbench', lambda wb: (wb, 'test'))
+    monkeypatch.setattr(converter, 'required_reference_paths', lambda data, hemi: {})
+    monkeypatch.setattr(converter, 'display_mesh_paths', lambda data, hemi: ())
+    app = AppTest.from_file(str(ROOT/'app.py')).run()
+    app.selectbox(key='atlas').select(atlas).run()
+    app.checkbox[0].check().run()
+    assert not app.exception
+    assert app.button[0].disabled
+    assert all('missing L file' in option for option in app.selectbox(key='atlas').options)
+    commands = [item.value for item in app.code]
+    if atlas == 'schaefer100-7net':
+        assert 'python prepare_demo.py' in commands
+        assert not any('--include-templateflow' in command for command in commands)
+    else:
+        assert 'python prepare_demo.py --include-templateflow' in commands
+        assert any('THIRD_PARTY_NOTICES.md' in item.value for item in app.markdown)
+    app.selectbox(key='hemisphere').select('R').run()
+    assert not app.exception
+    assert not app.button[0].disabled
+    assert app.selectbox(key='atlas').value == atlas
+    assert all('missing' not in option for option in app.selectbox(key='atlas').options)
+    assert not app.code  # no download prompt for the available hemisphere

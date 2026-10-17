@@ -68,9 +68,12 @@ with st.sidebar:
 st.subheader('1. Choose your atlas')
 mode = st.radio('Input', ['Atlas catalog', 'Upload my atlas'], horizontal=True,on_change=clear_results)
 catalog=entries()
+hemi = st.selectbox('Hemisphere', ['L','R'], format_func=lambda x:'Left' if x=='L' else 'Right',
+                    key='hemisphere', on_change=clear_results)
 selected=st.selectbox('Choose a bundled atlas', [e['id'] for e in catalog],
-                      format_func=lambda k:get_entry(k)['name'],on_change=clear_results) if mode=='Atlas catalog' else None
-hemi = st.selectbox('Hemisphere', ['L','R'], format_func=lambda x:'Left' if x=='L' else 'Right',on_change=clear_results)
+                      format_func=lambda k: get_entry(k)['name'] +
+                      (f' — missing {hemi} file' if not source_file(k, hemi).is_file() else ''),
+                      key='atlas', on_change=clear_results) if mode=='Atlas catalog' else None
 uploaded = None
 if mode == 'Upload my atlas':
     uploaded = st.file_uploader('One fsaverage5 .annot or .label.gii file', type=['annot','gii'],on_change=clear_results)
@@ -78,6 +81,16 @@ if mode == 'Upload my atlas':
 else:
     st.caption('Atlas catalog uses local catalog files directly. No upload is needed. On a fresh clone, run prepare_demo.py to download Schaefer inputs; see README for other atlases.')
     entry=get_entry(selected)
+    if not source_file(selected, hemi).is_file():
+        st.warning(f'The selected atlas has no local {hemi} hemisphere file.')
+        if entry['family'] == 'Schaefer':
+            st.code('python prepare_demo.py', language='bash')
+        else:
+            st.markdown('Desikan/Destrieux downloads are optional. Review the '
+                        '[third-party notices](https://github.com/oumaymasoula/surface-atlas-rescue/blob/main/THIRD_PARTY_NOTICES.md) '
+                        'and applicable upstream terms before using the download route:')
+            st.code('python prepare_demo.py --include-templateflow', language='bash')
+        st.caption('Run the command from the project directory with the project environment active. No files are downloaded automatically.')
     st.caption(f'{entry["citation"]} · source: {entry["source"]}')
     if entry['id']=='desikan2006':
         st.info('These source files contain 34 cortical regions plus one corpus-callosum label per hemisphere. See coverage warnings after conversion.')

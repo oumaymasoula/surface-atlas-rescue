@@ -1,6 +1,8 @@
 """Numerical contracts and real Workbench downstream integration."""
 import csv
 import json
+import os
+import subprocess
 from pathlib import Path
 import shutil
 import sys
@@ -12,8 +14,31 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from catalog import source_file
+from converter import check_workbench, required_reference_paths, display_mesh_paths
 from examples.downstream_demo import (extract_regions, run_demo,
                                       synthetic_measurement, verify_extraction)
+
+
+@pytest.fixture
+def workbench():
+    wb = os.environ.get('ATLAS_RESCUE_WB') or shutil.which('wb_command')
+    if not wb:
+        pytest.skip('Workbench unavailable: set ATLAS_RESCUE_WB or add wb_command to PATH')
+    try:
+        executable, _ = check_workbench(wb)
+    except (OSError, subprocess.SubprocessError) as exc:
+        pytest.skip(f'Workbench dependency cannot run -version ({wb}): {exc}')
+    return executable
+
+
+def require_demo_data(atlas):
+    paths = [source_file(atlas, 'L'), *required_reference_paths(ROOT/'reference-data', 'L').values(),
+             display_mesh_paths(ROOT/'reference-data', 'L')[1]]
+    missing = [str(path) for path in paths if not path.is_file()]
+    if missing:
+        option = ' --include-templateflow (review THIRD_PARTY_NOTICES.md first)' if atlas == 'desikan2006' else ''
+        pytest.skip('Required downstream data unavailable: ' + ', '.join(missing)
+                    + '. Run python prepare_demo.py' + option)
 
 
 @pytest.fixture
@@ -62,13 +87,10 @@ def test_simulation_reproducible_and_independent_of_labels():
 
 
 @pytest.mark.workbench
-def test_real_conversion_and_aligned_measurement_reuse(tmp_path):
-    if not shutil.which('/usr/bin/wb_command'):
-        pytest.skip('/usr/bin/wb_command required for real downstream integration')
-    if not source_file('desikan2006', 'L').is_file():
-        pytest.skip('Optional TemplateFlow Desikan input not downloaded')
+def test_real_conversion_and_aligned_measurement_reuse(tmp_path, workbench):
+    require_demo_data('desikan2006')
     output = tmp_path/'synthetic'
-    summary = run_demo(output)
+    summary = run_demo(output, atlas='desikan2006', wb=workbench)
     assert summary['regional_rows'] == 34
     assert summary['excluded_names'] == ['corpuscallosum']
     assert all(summary['checks'].values())
@@ -83,19 +105,32 @@ def test_real_conversion_and_aligned_measurement_reuse(tmp_path):
     assert 'corpuscallosum' not in {r['region_name'] for r in rows}
     # The supplied-map path exercises the same extraction using a custom source.
     reused = tmp_path/'supplied'
-    supplied = run_demo(reused, atlas='custom', source=source_file('desikan2006', 'L'),
+    supplied = run_demo(reused, atlas='custom', wb=workbench, source=source_file('desikan2006', 'L'),
                         measurement_path=output/'synthetic_measurement.shape.gii')
     assert supplied['seed'] is None
     assert (reused/'regional_values.tsv').read_bytes() == (output/'regional_values.tsv').read_bytes()
     assert json.loads((reused/'checks.json').read_text())['checks']['independent_numpy_means_match']
     with pytest.raises(ValueError, match='existing results'):
-        run_demo(output)
+        run_demo(output, wb=workbench)
 
 
 @pytest.mark.workbench
-def test_schaefer_downstream_from_public_download_profile(tmp_path):
-    if not shutil.which('/usr/bin/wb_command'):
-        pytest.skip('/usr/bin/wb_command required for Schaefer downstream integration')
-    summary = run_demo(tmp_path/'schaefer', atlas='schaefer100-7net')
+def test_schaefer_downstream_from_public_download_profile(tmp_path, workbench):
+    require_demo_data('schaefer100-7net')
+    summary = run_demo(tmp_path/'schaefer', wb=workbench)
+    assert summary['atlas'] == 'schaefer100-7net'
     assert summary['regional_rows'] == 50
     assert all(summary['checks'].values())
+
+
+def test_cli_defaults_use_standard_download_atlas(monkeypatch):
+    from examples import downstream_demo
+    captured = {}
+    def record(output, atlas, *args):
+        captured.update(output=output, atlas=atlas)
+        return {'data_kind': 'SYNTHETIC', 'checks': {}, 'regional_rows': 50}
+    monkeypatch.setattr(downstream_demo, 'run_demo', record)
+    monkeypatch.setattr(sys, 'argv', ['downstream_demo.py'])
+    downstream_demo.main()
+    assert captured == {'atlas': 'schaefer100-7net',
+                        'output': ROOT/'examples/output/schaefer-L-synthetic'}

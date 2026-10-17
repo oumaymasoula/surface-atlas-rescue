@@ -100,11 +100,14 @@ repository root (the directory containing `app.py`).
    also launch with `ATLAS_RESCUE_WB=/usr/bin/wb_command` and
    `ATLAS_RESCUE_DATA=/absolute/path/reference-data` environment variables.
 
-Select the input mode, atlas and hemisphere, confirm the declared fsaverage5
+Select the input mode, hemisphere and atlas, confirm the declared fsaverage5
 space, then choose **Convert and check**. Conversion stays disabled while
 Workbench cannot run `-version`, any required hemisphere reference/display mesh
 is missing, or no input is available. Inspect warnings, previews and labels before
-downloading. The app allows two concurrent conversions per server process;
+downloading. Atlas options marked “missing L file” or “missing R file” are
+unavailable for the selected hemisphere; conversion remains disabled and the app
+shows the appropriate manual download command and optional TemplateFlow notices.
+No downloads start automatically. The app allows two concurrent conversions per server process;
 this is not a public-server capacity guarantee.
 
 ## Command-line conversion
@@ -137,9 +140,11 @@ units and are **not participant MRI or evidence of biological validity**.
 
 Means are ordinary vertex means, **not area weighted**. Background is excluded;
 Desikan's corpuscallosum and Destrieux's Medial_wall are explicitly excluded when
-present. Empty regions retain count 0 and mean NaN. The script's default atlas is
-Desikan, requiring its separately obtained local data; the Schaefer command above
-uses the default downloader's inputs. Use a new `--output` folder for each run.
+present. Empty regions retain count 0 and mean NaN. The default atlas is
+`schaefer100-7net`, with output directory `examples/output/schaefer-L-synthetic`,
+so the example works after the standard download setup. Desikan remains an
+explicit `--atlas desikan2006` choice requiring its optional local data.
+Use a new `--output` folder for each run.
 
 See [examples/USEFULNESS_TEST.md](examples/USEFULNESS_TEST.md) for repeating the task
 with a researcher's custom fsaverage5 atlas and an already aligned fsLR32k

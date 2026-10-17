@@ -122,7 +122,7 @@ def save_figure(path, coords, faces, measurement, rows, synthetic, hemi):
     fig.write_html(path, include_plotlyjs=True, full_html=True)
 
 
-def run_demo(output, atlas='desikan2006', hemi='L', data_dir=ROOT/'reference-data',
+def run_demo(output, atlas='schaefer100-7net', hemi='L', data_dir=ROOT/'reference-data',
              wb='/usr/bin/wb_command', source=None, measurement_path=None, excluded_names=()):
     output = Path(output).resolve()
     if output.exists() and any(output.iterdir()):
@@ -216,11 +216,13 @@ independent validation; research demand requires actual users doing their work.
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--atlas', choices=[e['id'] for e in entries()] + ['custom'], default='desikan2006')
+    parser.add_argument('--atlas', choices=[e['id'] for e in entries()] + ['custom'], default='schaefer100-7net',
+                        help='Catalog atlas (default: schaefer100-7net, available after standard prepare_demo.py setup)')
     parser.add_argument('--hemi', choices=['L', 'R'], default='L')
     parser.add_argument('--wb', default='/usr/bin/wb_command')
     parser.add_argument('--data-dir', type=Path, default=ROOT/'reference-data')
-    parser.add_argument('--output', type=Path, default=ROOT/'examples/output/desikan-L-synthetic')
+    parser.add_argument('--output', type=Path, default=ROOT/'examples/output/schaefer-L-synthetic',
+                        help='New/empty output directory (default: examples/output/schaefer-L-synthetic)')
     parser.add_argument('--source', type=Path, help='Custom fsaverage5 .annot or .label.gii; use --atlas custom')
     parser.add_argument('--measurement', type=Path, help='Already aligned single-array fsLR32k continuous GIFTI; omit for SYNTHETIC data')
     parser.add_argument('--exclude-name', action='append', default=[], help='Exact noncortical dictionary name; repeat as needed')

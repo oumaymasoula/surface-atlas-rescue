@@ -37,3 +37,20 @@ Issue forms and workflow YAML were parsed. The publication audit checks staged
 UTF-8 files for token/key patterns and private workspace paths, rejects data and
 binary extensions, and records file sizes/hashes locally. A pattern scan is not
 a guarantee that no possible secret can exist. No findings were detected.
+
+## Schaefer default and catalog availability update
+
+- Existing-environment full suite with `ATLAS_RESCUE_WB=/usr/bin/wb_command`:
+  **26 passed, no skips or failures**. Data-free selection: **22 passed,
+  4 deselected**. The four new cases cover CLI defaults and missing left/present
+  right catalog input guidance across all three atlas families.
+- Downstream integration tests run with an environment-selected wrapper around
+  Workbench: **2 passed, 7 deselected**; the wrapper recorded actual resampling
+  calls, verifying that the chosen executable reached the converter.
+- Downstream integration tests with `ATLAS_RESCUE_WB` unset (PATH lookup):
+  **2 passed, 7 deselected**.
+- The CLI with its default atlas and a fresh output directory produced 50
+  Schaefer regional rows and passed all five downstream checks. Output remains
+  local under `examples/output/schaefer-default-update/`.
+
+The conversion algorithm, existing data and environment were not changed.

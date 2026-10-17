@@ -10,23 +10,24 @@ From the directory containing `app.py`, using the existing environment:
 
 ```bash
 /usr/bin/wb_command -version
+./.venv/bin/python prepare_demo.py
 ./.venv/bin/python examples/downstream_demo.py --wb /usr/bin/wb_command
 ./.venv/bin/python -m pytest -q
 ```
 
-The default uses the local **left Desikan atlas**, converts it through
+The default uses the local **left Schaefer-100/7-network atlas**, converts it through
 `converter.convert`, and simulates a continuous map on the matching inflated
 fsLR32k reference mesh (32,492 vertices). The map is a coordinate gradient plus
 noise from NumPy's fixed seed **20261016**. It is **SYNTHETIC**, in arbitrary units:
 not participant MRI, not a model of any biological process. It is constructed
-without using region IDs. No new dependencies are required. GitHub excludes atlas/reference data and all
-generated outputs. See ../THIRD_PARTY_NOTICES.md before obtaining data. Run
-`./.venv/bin/python prepare_demo.py --include-templateflow` only after reviewing
-the TemplateFlow terms. To avoid those optional atlas downloads, use
-`--atlas schaefer100-7net --output examples/output/schaefer-L-synthetic` after
-the default data download; it produces 50 left-hemisphere regional rows.
+without using region IDs. No new dependencies are required. GitHub excludes
+atlas/reference data and generated outputs. See
+[THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) before obtaining data.
+The default requires only the standard `prepare_demo.py` download setup.
+Desikan/Destrieux remain explicit choices; their optional
+`prepare_demo.py --include-templateflow` route requires upstream terms review.
 
-Default outputs are in `examples/output/desikan-L-synthetic/`:
+Default outputs are in `examples/output/schaefer-L-synthetic/`:
 
 | Output | Produced by | Meaning |
 |---|---|---|
@@ -39,8 +40,9 @@ Default outputs are in `examples/output/desikan-L-synthetic/`:
 | `downstream_figure.html` | Downstream example | Self-contained interactive measurement surface and regional mean bars; open in a browser |
 | `checks.json`, `README.md` | Downstream example | Numerical check results, provenance, exclusions and interpretation |
 
-Background ID 0 and the Desikan **corpuscallosum** label are excluded, leaving
-34 cortical regions. Means are ordinary arithmetic vertex means, **not area
+Background ID 0 is excluded, leaving 50 left-hemisphere Schaefer regions.
+When Desikan is explicitly selected, **corpuscallosum** is also excluded,
+leaving 34 cortical regions. Means are ordinary arithmetic vertex means, **not area
 weighted**. The converter's use of area metrics for label resampling does not
 make downstream means area weighted. Dictionary entries with no target vertices
 are retained as count 0 and mean `NaN`; they must not be interpreted as zero
@@ -59,7 +61,7 @@ For another run, choose a new output directory; existing output is never overwri
 
 ```bash
 ./.venv/bin/python examples/downstream_demo.py --wb /usr/bin/wb_command \
-  --atlas desikan2006 --hemi R --output examples/output/desikan-R-synthetic
+  --hemi R --output examples/output/schaefer-R-synthetic
 ```
 
 Other bundled catalog IDs are accepted via `--atlas` (see `--help`). Destrieux's

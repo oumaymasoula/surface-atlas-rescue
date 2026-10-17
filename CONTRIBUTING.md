@@ -32,8 +32,10 @@ ATLAS_RESCUE_WB=/usr/bin/wb_command ./.venv/bin/python -m pytest -q -m workbench
 ```
 
 The test download profile obtains only reference files plus Schaefer-100/7-network
-inputs. The Schaefer integration test fails if these inputs are missing; it does
-not replace a missing conversion with a pass. Tests requiring optional
+inputs. The Schaefer app integration test fails if these inputs are missing. Downstream
+integration tests skip explicitly when required data or Workbench are unavailable;
+they resolve `ATLAS_RESCUE_WB` first, then `wb_command` on PATH, and pass that
+executable to the example. A skip is never a conversion pass. Tests requiring optional
 TemplateFlow Desikan/Destrieux skip explicitly if those atlases are missing.
 To exercise those locally after reviewing their source terms:
 
