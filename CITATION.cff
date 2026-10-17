@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this software and the original tools, atlases and reference sources listed in README.md."
+type: software
+title: "Surface Atlas Rescue"
+abstract: "A research prototype for preserving label names and colours when converting one fsaverage5 atlas hemisphere to fsLR32k, with file compatibility checks and a separate synthetic downstream example."
+authors:
+  - family-names: "Soula"
+    given-names: "Oumayma"
+license: MIT
+keywords:
+  - neuroimaging
+  - cortical-atlas
+  - fsaverage5
+  - fsLR32k
+repository-code: "https://github.com/oumaymasoula/surface-atlas-rescue"
+url: "https://github.com/oumaymasoula/surface-atlas-rescue"

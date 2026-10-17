@@ -1,0 +1,351 @@
+{
+  "neuromaps_reference_commit": "ffcc2e0f657943ce00a1b6a968396f32250e495c",
+  "files": [
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_space-fsaverage_den-32k_hemi-R_sphere.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_space-fsaverage_den-32k_hemi-R_sphere.surf.gii/content",
+      "md5": "2d02bca8d1b82cb06ce989528c913dcf",
+      "sha256": "8c1f67fa8fb3024ad3b292be995d5c9bae07dc4dbdd53fbac48e511e1366553d",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-L_desc-sulc_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-L_desc-sulc_midthickness.shape.gii/content",
+      "md5": "4f2a9674ac42e55c6ef640427a6ff1c9",
+      "sha256": "decdbded37ae060ffaee40c5705b61427ddd4d72d8242711e9191395e81afcaf",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-R_desc-vaavg_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-R_desc-vaavg_midthickness.shape.gii/content",
+      "md5": "eb850cfb04cca4a2569f0e4f5f63144a",
+      "sha256": "cb4b7680b8637c81398a99d4a034ee1680510ad6528d6948b4aa9c67b3e81867",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-L_desc-nomedialwall_dparc.label.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-L_desc-nomedialwall_dparc.label.gii/content",
+      "md5": "ae43fe46819e08ccadda787d4608ccc3",
+      "sha256": "08aa178e6acfe288cf9eb19b6d8faf49b6faefd8f69ca646a79fdffb810ac4b7",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-R_desc-sulc_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-R_desc-sulc_midthickness.shape.gii/content",
+      "md5": "b4f8279365baa2bc7d1a35d904b83efa",
+      "sha256": "a48e6dca2e8df0831444d37153cde794813ee1ebb6fc2e2ebe6dc0070f51e6c4",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-L_desc-vaavg_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-L_desc-vaavg_midthickness.shape.gii/content",
+      "md5": "ed613f59b67660a89b27db4277c7e575",
+      "sha256": "e06c0f3e6069f9244e4dd74a4265323be3324a96c0f2bf9edd5ad9734d170f6d",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-R_sphere.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-R_sphere.surf.gii/content",
+      "md5": "32b82c5dc6878a9906ef85ca6fc85392",
+      "sha256": "1a898433a9f1070e4e0435d4db966776ecc3291bfcd444efc7910aeffb91561c",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_space-fsaverage_den-32k_hemi-L_sphere.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_space-fsaverage_den-32k_hemi-L_sphere.surf.gii/content",
+      "md5": "c1390ecd78b0f3bd7600dd655bbcf413",
+      "sha256": "31987d139b6cdf1040188d1795bf23c213c57f8e84fb45f2c04823d996b0defc",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-R_midthickness.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-R_midthickness.surf.gii/content",
+      "md5": "3007bdc8009da0e767a2789a192380ef",
+      "sha256": "9d2cef05096c433b134870456abebe7ff201cdda60ce5741d7b794018eeccda7",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-R_desc-nomedialwall_dparc.label.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-R_desc-nomedialwall_dparc.label.gii/content",
+      "md5": "60a2695acb711aa9dfee65713c8c54db",
+      "sha256": "cf9fc9dd03038feb6faee5a4bc3e9ff611f3fd0324602927d3965307e47cbd9f",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-L_midthickness.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-L_midthickness.surf.gii/content",
+      "md5": "aff7c1769cf4594fa36c115497c5fd39",
+      "sha256": "036a8b6c84fa4b581b7ad7b36d99190b57ad6755c9d7ef7adc3e9ffc6448f1af",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-R_inflated.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-R_inflated.surf.gii/content",
+      "md5": "aaceebfc127cc95a6eacd0cc12e8281d",
+      "sha256": "8237f4e759e88a64059dddc621104f318abd0346c45c1f7d5a88025862e104c7",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-L_sphere.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-L_sphere.surf.gii/content",
+      "md5": "e4f5a753b9337661d87a30e37358d7fa",
+      "sha256": "1846b053f870405466776d004d714cc1da0cec7361761c65a864782dd09f30a8",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsLR/tpl-fsLR_den-32k_hemi-L_inflated.surf.gii",
+      "url": "https://zenodo.org/api/records/21971672/files/tpl-fsLR_den-32k_hemi-L_inflated.surf.gii/content",
+      "md5": "c04842096a8d5ea6a39b8c1e488c9854",
+      "sha256": "1672da09e4eb112883fe76fe36e8167340e3dbcb9ba28d1f7b83b55acace635a",
+      "record": 21971672
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_desc-vaavg_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_desc-vaavg_midthickness.shape.gii/content",
+      "md5": "135965f9703545aba81fedb6092fcead",
+      "sha256": "d3c03ce6efe36e0bc85d85a6f24bdfcc51da7427b19e28b79783ae8062e88e02",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_desc-nomedialwall_dparc.label.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_desc-nomedialwall_dparc.label.gii/content",
+      "md5": "31bd888753f0c99410872f85bbebb85d",
+      "sha256": "40ea0f85e75837f2f5c6f7ccc238436d2137c28a92baca194fd0db4113fd924d",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_white.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_white.surf.gii/content",
+      "md5": "5d4a7a4951d20cfe9f0b74db2e5d0b51",
+      "sha256": "9556b433a88aec1f5cf44e9ea9f1a2206bbaa6d0cea419ce7f3aec72f93258c7",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_desc-nomedialwall_dparc.label.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_desc-nomedialwall_dparc.label.gii/content",
+      "md5": "93880eb3503859e778e6f6e0cd8a4ef4",
+      "sha256": "9c6568b6861f00f5c89f5f50b906feb329c4f2a21e892b7ef87fb708b8e3c55e",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_pial.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_pial.surf.gii/content",
+      "md5": "033a26517a5ee915b15633a88df7fc0e",
+      "sha256": "f4730cd7a8e9602fb7b2aa69fd6839c7c3175c28ed3749e564cbde7299eb6da0",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_desc-vaavg_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_desc-vaavg_midthickness.shape.gii/content",
+      "md5": "f816c5273380d5d31b8269f816f12aca",
+      "sha256": "c039f3035e0730feb49774f8956c80ecd85288ad0a9fbc2706c538dc73ddde8a",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_inflated.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_inflated.surf.gii/content",
+      "md5": "67f61e732db7af229f1f319bf29e0864",
+      "sha256": "04a9eedae902d13926130da913c95c5cbb3fe4e67d659926945e7616abc50822",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_inflated.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_inflated.surf.gii/content",
+      "md5": "2cd45c8fbe23cf8e772a7eb2df345e29",
+      "sha256": "35eab939deb5b66d628b801a46d5b82a0b2e69909c2ab683159c3b4cf4c5cde1",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_desc-sulc_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_desc-sulc_midthickness.shape.gii/content",
+      "md5": "578de43c5936bf6af2db785449199e38",
+      "sha256": "0359edb0e0dbcaff5722e34bbdeb382b4065b0276b7b1fecdd1171947d0150f0",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_sphere.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_sphere.surf.gii/content",
+      "md5": "8c726f8e1254f4b89d9813bb973208e3",
+      "sha256": "33f4c8c98ebb3ac0272a1bcbf5ad46a845b879ab72ab92eb3321fb22e11e24ce",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_pial.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_pial.surf.gii/content",
+      "md5": "c41d1e7c93c3db81e14c7b17eb58604a",
+      "sha256": "e6c2c676bd048ad9a132cbb7745533a257abb8a2263adade5ca568be90e320a8",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_white.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_white.surf.gii/content",
+      "md5": "3af22be1ddc56098c9365c471df02054",
+      "sha256": "37b20820885f98d4473f95495f4b6b6fcb99e097ae48f391b6d2708e691fd14a",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-L_sphere.surf.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-L_sphere.surf.gii/content",
+      "md5": "7b1e5c65df428cff5f199731adfa45ed",
+      "sha256": "96eee9ea13f4373d97e6edcc117147a7f5655eb6cc4833c33b44a56058759969",
+      "record": 21971661
+    },
+    {
+      "path": "reference-data/atlases/fsaverage/tpl-fsaverage_den-10k_hemi-R_desc-sulc_midthickness.shape.gii",
+      "url": "https://zenodo.org/api/records/21971661/files/tpl-fsaverage_den-10k_hemi-R_desc-sulc_midthickness.shape.gii/content",
+      "md5": "c4a8a112315c52f35fa2ddf479aeec16",
+      "sha256": "d167af76d6a7f4c9104abccb9fbac1d33334e3f69f828ecf62f128cf2b606112",
+      "record": 21971661
+    },
+    {
+      "path": "demo/input/rh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "sha256": "49f7fa5960baca9b291557499a125eb242f3dd17001cc41e5d345d69d3f30c86"
+    },
+    {
+      "path": "demo/input/lh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "sha256": "b19c45830f473c802db40171d6af745950edccd614d58f1cf5a25d1b2aa6adce"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "sha256": "b19c45830f473c802db40171d6af745950edccd614d58f1cf5a25d1b2aa6adce"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_100Parcels_7Networks_order.annot",
+      "sha256": "49f7fa5960baca9b291557499a125eb242f3dd17001cc41e5d345d69d3f30c86"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_100Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_100Parcels_17Networks_order.annot",
+      "sha256": "0c625ae719194eb49731292da8bc71e620d792f439b3a4548c23d5c9637314d7"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_100Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_100Parcels_17Networks_order.annot",
+      "sha256": "c8f708e80782f2905f6fbce16bd2f5d46d78927897bcadcf04c93ea700e4b99a"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_200Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_200Parcels_7Networks_order.annot",
+      "sha256": "6c2d0e6e85841f9031f4193a9ceaca34023857c9aaf68538801d78b1ec367b5f"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_200Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_200Parcels_7Networks_order.annot",
+      "sha256": "19641a1d2b3001c6159383e27aad72d5af62f6fafd0d78ef11d2af3efd143a74"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_200Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_200Parcels_17Networks_order.annot",
+      "sha256": "c83bbf15d7b4e3b0a08d057542a05394792ced135129312e187c562732df2c64"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_200Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_200Parcels_17Networks_order.annot",
+      "sha256": "27acc9d01ee84d03d2710a550c7e4d49af8bf646bcf8fdaf459f0b07f2465425"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_400Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_400Parcels_7Networks_order.annot",
+      "sha256": "48dcdc0c63df9feddb34eb631ef3571dfbd73360709a3aa799e05e1bc7d9e2b5"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_400Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_400Parcels_7Networks_order.annot",
+      "sha256": "1c24e9c5e2e35df05ddb8b82c60ea4ebbbbe48986bc11aa24a58ede47742f5aa"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_400Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_400Parcels_17Networks_order.annot",
+      "sha256": "d3802ca644558a15bf516fcb4cb1b0137ecabaa0b02a6d109706ead3a78242d0"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_400Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_400Parcels_17Networks_order.annot",
+      "sha256": "d3f478247140acbc996ceb70cc0861daf7997b23a5234fb78cca5262b24a4741"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_600Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_600Parcels_7Networks_order.annot",
+      "sha256": "4b9774b0dc01a2c5d69b56650229ce607ef4a2ae4c485bb6ff8f2bfd6a329f99"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_600Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_600Parcels_7Networks_order.annot",
+      "sha256": "5d74a0ed86251d37da5e347392b66c0c05a8d318e1ca839fd4bb299779052978"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_600Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_600Parcels_17Networks_order.annot",
+      "sha256": "6c489488c8f6d2029f44801c410be3639399d0684600315ee604cb5b214948e2"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_600Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_600Parcels_17Networks_order.annot",
+      "sha256": "0aad627c184714c5981ae27e7a81224c4c676191563215449e9be849006a181b"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_800Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_800Parcels_7Networks_order.annot",
+      "sha256": "f1511dfbff0f7af3ce5f3dbb93cb7396d7bbf7535212101da338e401b6d3b280"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_800Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_800Parcels_7Networks_order.annot",
+      "sha256": "afd1a4f81c2032c8ea77ec47ece62f014071f208cec0cee25e5c3f162f4b1202"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_800Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_800Parcels_17Networks_order.annot",
+      "sha256": "cc99875f4af23d37456200e3acdf71a49c708d311c8f40d97be3521fd6e3da6d"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_800Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_800Parcels_17Networks_order.annot",
+      "sha256": "812a8523fb0a5b8fe4484d0aa4d31801f06860fe756dda2af972ee41917159d6"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_1000Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_1000Parcels_7Networks_order.annot",
+      "sha256": "637fa1275bb9c9f9cbf245699ee45445e83a9f2a6b43229f239fafbd984a05db"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_1000Parcels_7Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_1000Parcels_7Networks_order.annot",
+      "sha256": "9e4aa19a1b4f9514d8c1385c607652124007ebc48c9cdf5aff4f2cba407db44e"
+    },
+    {
+      "path": "catalog-data/lh.Schaefer2018_1000Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/lh.Schaefer2018_1000Parcels_17Networks_order.annot",
+      "sha256": "05eb6160abe753789f5655333e22045183d3ce422a0623f22e484887d237e9a7"
+    },
+    {
+      "path": "catalog-data/rh.Schaefer2018_1000Parcels_17Networks_order.annot",
+      "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage5/label/rh.Schaefer2018_1000Parcels_17Networks_order.annot",
+      "sha256": "1cff5ae870a03d1b49ee45f95cf2555369529f04ccbe8b8312baf75229b62542"
+    },
+    {
+      "path": "catalog-data/tpl-fsaverage_hemi-L_den-10k_atlas-Desikan2006_seg-aparc_dseg.label.gii",
+      "url": "https://templateflow.s3.amazonaws.com/tpl-fsaverage/tpl-fsaverage_hemi-L_den-10k_atlas-Desikan2006_seg-aparc_dseg.label.gii",
+      "sha256": "0d7e68e9e19c345ddc6286e1b32b706b543b965a1ef4a3cfa005901a67a80096"
+    },
+    {
+      "path": "catalog-data/tpl-fsaverage_hemi-R_den-10k_atlas-Desikan2006_seg-aparc_dseg.label.gii",
+      "url": "https://templateflow.s3.amazonaws.com/tpl-fsaverage/tpl-fsaverage_hemi-R_den-10k_atlas-Desikan2006_seg-aparc_dseg.label.gii",
+      "sha256": "5aab7074118df85cf9654172bb829dcc0504431ae2ba6c1dca128aa3b6bbb3dc"
+    },
+    {
+      "path": "catalog-data/tpl-fsaverage_hemi-L_den-10k_atlas-Destrieux2009_dseg.label.gii",
+      "url": "https://templateflow.s3.amazonaws.com/tpl-fsaverage/tpl-fsaverage_hemi-L_den-10k_atlas-Destrieux2009_dseg.label.gii",
+      "sha256": "bc2088b481f88d969a62008fd4d37360774bc8ee12335073c0fdd71a580372fe"
+    },
+    {
+      "path": "catalog-data/tpl-fsaverage_hemi-R_den-10k_atlas-Destrieux2009_dseg.label.gii",
+      "url": "https://templateflow.s3.amazonaws.com/tpl-fsaverage/tpl-fsaverage_hemi-R_den-10k_atlas-Destrieux2009_dseg.label.gii",
+      "sha256": "7f8963b56c99fe4b3350fe2291969c7104a7d4c6d2d861f5397c469a01dd0a4c"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+neuromaps==0.0.7
+nibabel==5.4.2
+numpy>=1.25,<3
+streamlit==1.66.0
+plotly>=5,<8
+pytest>=8,<10
+pandas>=2,<4

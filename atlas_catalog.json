@@ -1,0 +1,176 @@
+{
+  "source_space": "fsaverage5",
+  "target_space": "fsLR32k",
+  "atlases": [
+    {
+      "id": "schaefer100-7net",
+      "family": "Schaefer",
+      "name": "Schaefer 100 \u2014 7 networks",
+      "expected_regions_total": 100,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_100Parcels_7Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_100Parcels_7Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer100-17net",
+      "family": "Schaefer",
+      "name": "Schaefer 100 \u2014 17 networks",
+      "expected_regions_total": 100,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_100Parcels_17Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_100Parcels_17Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer200-7net",
+      "family": "Schaefer",
+      "name": "Schaefer 200 \u2014 7 networks",
+      "expected_regions_total": 200,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_200Parcels_7Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_200Parcels_7Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer200-17net",
+      "family": "Schaefer",
+      "name": "Schaefer 200 \u2014 17 networks",
+      "expected_regions_total": 200,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_200Parcels_17Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_200Parcels_17Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer400-7net",
+      "family": "Schaefer",
+      "name": "Schaefer 400 \u2014 7 networks",
+      "expected_regions_total": 400,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_400Parcels_7Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_400Parcels_7Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer400-17net",
+      "family": "Schaefer",
+      "name": "Schaefer 400 \u2014 17 networks",
+      "expected_regions_total": 400,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_400Parcels_17Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_400Parcels_17Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer600-7net",
+      "family": "Schaefer",
+      "name": "Schaefer 600 \u2014 7 networks",
+      "expected_regions_total": 600,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_600Parcels_7Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_600Parcels_7Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer600-17net",
+      "family": "Schaefer",
+      "name": "Schaefer 600 \u2014 17 networks",
+      "expected_regions_total": 600,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_600Parcels_17Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_600Parcels_17Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer800-7net",
+      "family": "Schaefer",
+      "name": "Schaefer 800 \u2014 7 networks",
+      "expected_regions_total": 800,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_800Parcels_7Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_800Parcels_7Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer800-17net",
+      "family": "Schaefer",
+      "name": "Schaefer 800 \u2014 17 networks",
+      "expected_regions_total": 800,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_800Parcels_17Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_800Parcels_17Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer1000-7net",
+      "family": "Schaefer",
+      "name": "Schaefer 1000 \u2014 7 networks",
+      "expected_regions_total": 1000,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_1000Parcels_7Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_1000Parcels_7Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "schaefer1000-17net",
+      "family": "Schaefer",
+      "name": "Schaefer 1000 \u2014 17 networks",
+      "expected_regions_total": 1000,
+      "files": {
+        "L": "catalog-data/lh.Schaefer2018_1000Parcels_17Networks_order.annot",
+        "R": "catalog-data/rh.Schaefer2018_1000Parcels_17Networks_order.annot"
+      },
+      "source": "https://github.com/ThomasYeoLab/CBIG",
+      "citation": "Schaefer et al. 2018, doi:10.1093/cercor/bhx179"
+    },
+    {
+      "id": "desikan2006",
+      "family": "Desikan\u2013Killiany",
+      "name": "Desikan\u2013Killiany",
+      "files": {
+        "L": "catalog-data/tpl-fsaverage_hemi-L_den-10k_atlas-Desikan2006_seg-aparc_dseg.label.gii",
+        "R": "catalog-data/tpl-fsaverage_hemi-R_den-10k_atlas-Desikan2006_seg-aparc_dseg.label.gii"
+      },
+      "source": "https://github.com/templateflow/tpl-fsaverage",
+      "citation": "Desikan et al. 2006",
+      "cortical_regions_total": 68,
+      "source_nonbackground_labels_total": 70
+    },
+    {
+      "id": "destrieux2009",
+      "family": "Destrieux",
+      "name": "Destrieux",
+      "files": {
+        "L": "catalog-data/tpl-fsaverage_hemi-L_den-10k_atlas-Destrieux2009_dseg.label.gii",
+        "R": "catalog-data/tpl-fsaverage_hemi-R_den-10k_atlas-Destrieux2009_dseg.label.gii"
+      },
+      "source": "https://github.com/templateflow/tpl-fsaverage",
+      "citation": "Destrieux et al. 2010",
+      "cortical_regions_total": 148,
+      "source_nonbackground_labels_total": 150
+    }
+  ]
+}

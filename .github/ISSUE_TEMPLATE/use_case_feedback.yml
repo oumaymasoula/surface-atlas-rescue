@@ -1,0 +1,44 @@
+name: Use-case feedback
+description: Share an actual workflow experience; synthetic trials are welcome if identified.
+title: "[Feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Share only nonprivate workflow descriptions. Do not attach participant/private data. This feedback does not establish anatomical validity or broad research demand."
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What task did you actually attempt? Was the input synthetic, public or your own custom atlas?
+    validations:
+      required: true
+  - type: input
+    id: space
+    attributes:
+      label: Input space and format
+      description: Space, density, format and hemisphere; no private filenames.
+    validations:
+      required: true
+  - type: textarea
+    id: obstacle
+    attributes:
+      label: Obstacle or assistance needed
+      description: What blocked or slowed the task? State none if it worked unaided.
+    validations:
+      required: true
+  - type: dropdown
+    id: usable
+    attributes:
+      label: Was the output usable for your intended task?
+      options:
+        - "Yes"
+        - "Partly"
+        - "No"
+        - "Not evaluated"
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Comparison and next use
+      description: How did effort compare with your existing workflow? Would you use it again, and why?

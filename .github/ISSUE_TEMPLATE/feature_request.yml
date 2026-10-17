@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement tied to a concrete task.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach participant/private data or credentials."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Task and obstacle
+      description: What are you trying to do, and what currently prevents it?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the desired input/output and relevant space/hemisphere.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Would an official target-space atlas or existing workflow solve the task?

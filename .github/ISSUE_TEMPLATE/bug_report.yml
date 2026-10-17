@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible software problem using sanitized or synthetic inputs.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach participant/private data, identifiers, tokens or unsanitized reports. Use synthetic inputs where possible."
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Ubuntu release and architecture
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: Python, relevant packages, wb_command -version, and project commit.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or app selections
+      description: Include working directory context, input format/space and hemisphere; remove private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error and expected behavior
+      description: Paste sanitized error text or technical details, and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Minimal steps with public or synthetic inputs; do not upload private data.
+    validations:
+      required: true

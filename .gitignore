@@ -1,0 +1,52 @@
+# Environments, caches and local editor/agent configuration
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.agents/
+.codex/
+.aws/
+.vscode/
+.idea/
+.DS_Store
+# Credentials and private inputs (never add participant data)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.streamlit/secrets.toml
+private-data/
+private/
+participant-data/
+# Disable Streamlit usage telemetry; local config may also contain deployment settings
+.streamlit/
+# External data stay local; notices and reproducible download manifest are published
+reference-data/
+catalog-data/*
+!catalog-data/DATA_NOTICES.md
+!catalog-data/FreeSurfer_LICENSE.txt
+demo/input/
+# Generated/derived artifacts and binary installations
+tools/
+*.so
+*.dll
+*.exe
+*.download
+runs/
+results*/
+output/
+catalog-tests/
+verification-catalog-final/
+demo/output/
+examples/output/
+publication-audit/
+*.log
+!.streamlit/
+.streamlit/*
+!.streamlit/config.toml
