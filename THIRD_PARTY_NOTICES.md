@@ -17,7 +17,7 @@ runs are preserved on disk but excluded from Git publication.
   rights to neuromaps or remove its noncommercial/share-alike terms. Review those
   terms for the intended use, particularly commercial use or redistribution.
 - **Connectome Workbench**: external executable, not distributed here. See its
-  [license information](https://www.humanconnectome.org/software/workbench-license)
+  [license information](https://www.humanconnectome.org/software/connectome-workbench-license)
   and [source/distribution](https://github.com/Washington-University/workbench).
 - Python dependencies are installed separately: NiBabel (MIT), NumPy (BSD and
   bundled-component notices), Plotly.py (MIT), Streamlit (Apache-2.0), pandas

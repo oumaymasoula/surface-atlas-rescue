@@ -213,7 +213,10 @@ publication. Please also cite the relevant upstream work:
   brain maps*, Nature Methods. [doi:10.1038/s41592-022-01625-w](https://doi.org/10.1038/s41592-022-01625-w);
   [documentation and transformation citation guidance](https://netneurolab.github.io/neuromaps/).
 - [Connectome Workbench](https://www.humanconnectome.org/software/connectome-workbench)
-  and its label-resampling/masking tools. Related HCP methods: Glasser et al.
+  and its label-resampling/masking tools. Workbench acknowledgment guidance cites
+  Marcus et al. (2011), *Informatics and data mining tools and strategies for the
+  Human Connectome Project*, [doi:10.3389/fninf.2011.00004](https://doi.org/10.3389/fninf.2011.00004).
+  Related HCP methods: Glasser et al.
   (2013), *The minimal preprocessing pipelines for the Human Connectome Project*.
   [doi:10.1016/j.neuroimage.2013.04.127](https://doi.org/10.1016/j.neuroimage.2013.04.127).
 - Schaefer et al. (2018), *Local-Global Parcellation of the Human Cerebral Cortex
