@@ -238,3 +238,20 @@ publication. Please also cite the relevant upstream work:
   References: neuromaps-distributed fsaverage/fsLR surfaces, masks and area metrics;
   exact records and checksums in [resources.json](resources.json). These sources
   are attribution/provenance, not a claim of redistribution permission.
+
+## Experimental atlas sensitivity
+
+A separate real-map comparison prototype is documented in
+[experimental/atlas_sensitivity/README.md](experimental/atlas_sensitivity/README.md).
+It compares author-distributed BigBrain **Hist_G1** and MRI qT1-derived
+**Micro_G1** on **fsaverage 164k, left hemisphere**, using original Schaefer
+100/200/400 7-network atlas versions and **area-weighted regional means**
+(HCP group-average midthickness vertex-area weights). It does not alter
+the existing fsaverage5-to-fsLR conversion workflow or transform either map.
+It reports descriptive Pearson/Spearman estimates, common-mask coverage and
+provenance, with no p-values or biological/anatomical confirmation. The separate
+**Atlas sensitivity (experimental)** Streamlit workflow uses the same module and
+never downloads data automatically. External data and generated outputs stay local.
+The MRI map contains 420 retained finite zeros whose missing-data/sentinel semantics
+remain unresolved. Reported coverage is numerical coverage under the declared mask;
+it does **not** establish complete biological coverage or valid sampling at every vertex.

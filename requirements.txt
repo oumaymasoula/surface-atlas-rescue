@@ -5,3 +5,4 @@ streamlit==1.66.0
 plotly>=5,<8
 pytest>=8,<10
 pandas>=2,<4
+scipy>=1.10,<2

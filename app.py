@@ -20,6 +20,12 @@ from catalog import entries, get_entry, source_file
 ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title='Surface Atlas Rescue', layout='wide')
 st.title('Surface Atlas Rescue')
+workflow = st.sidebar.radio('Workflow', ['Atlas conversion', 'Atlas sensitivity (experimental)'],
+                            key='workflow')
+if workflow == 'Atlas sensitivity (experimental)':
+    from experimental.atlas_sensitivity.ui import render
+    render()
+    st.stop()
 st.write('Convert a labelled atlas from fsaverage5 to fsLR 32k, preserving its names and colours.')
 st.caption('Research prototype · one hemisphere per run · file checks do not prove anatomical alignment')
 

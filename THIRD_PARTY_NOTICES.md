@@ -61,3 +61,16 @@ subject to the source terms, not a substitute for obtaining redistribution right
 No rights-holder contact has been made. This repository does not resolve legal
 questions on behalf of users. Keep all supplied notices and cite the original
 atlas, reference and software authors when using their material.
+
+## Experimental BigBrain/MRI map comparison
+
+The optional `experimental/atlas_sensitivity` prototype downloads author-distributed
+BigBrainWarp Hist_G1 and Micro_G1 fields, an author reference sphere, and CBIG
+fsaverage annotations/area references. URLs and hashes are recorded in its
+`data_manifest.json`; see the experiment README for sources and citations.
+No external BigBrainWarp source code is copied. Its repository has separate GPL
+notices; these do not turn external data or derivatives into project-owned MIT
+material. Complete redistribution rights for every map/reference/derivative are
+not asserted here. All such files, inspection downloads and generated outputs
+are ignored by Git and kept local. Review the respective source terms before
+redistributing data or reports that embed or derive from them.

@@ -53,3 +53,7 @@ publication-audit/
 # Historical demo artifacts remain local; retain only the upstream notice
 demo/*
 !demo/CBIG_LICENSE.txt
+
+# Experimental external maps and generated sensitivity analyses
+experimental/atlas_sensitivity/data/
+experimental/atlas_sensitivity/output/

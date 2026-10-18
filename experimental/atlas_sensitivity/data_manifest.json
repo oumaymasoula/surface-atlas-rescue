@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "lh.Schaefer2018_100Parcels_7Networks_order.annot",
+    "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/634f676630929a71297852d01dd92a287103e861/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage/label/lh.Schaefer2018_100Parcels_7Networks_order.annot",
+    "sha256": "4c648453ee3de1041be3bc28d39621a6edc13a2ec046e493a765821ed3ab5052"
+  },
+  {
+    "filename": "lh.Schaefer2018_200Parcels_7Networks_order.annot",
+    "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/634f676630929a71297852d01dd92a287103e861/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage/label/lh.Schaefer2018_200Parcels_7Networks_order.annot",
+    "sha256": "c225937c31584c74d3e7c8fba7c17916ce4e730faa542ee61659041db136ac87"
+  },
+  {
+    "filename": "lh.Schaefer2018_400Parcels_7Networks_order.annot",
+    "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/634f676630929a71297852d01dd92a287103e861/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/FreeSurfer5.3/fsaverage/label/lh.Schaefer2018_400Parcels_7Networks_order.annot",
+    "sha256": "351848da486c2b178ef825640c076fcbcf054095bed0c91d5854d2c593e5c1ee"
+  },
+  {
+    "filename": "fsaverage.L.midthickness_va_avg.164k_fsavg_L.shape.gii",
+    "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/634f676630929a71297852d01dd92a287103e861/data/templates/surface/standard_mesh_atlases_20170508/resample_fsaverage/fsaverage.L.midthickness_va_avg.164k_fsavg_L.shape.gii",
+    "sha256": "fbbccfe4bbcec0619fa6549cfe3f3460c761b0becc7097092379d98a684a52e0"
+  },
+  {
+    "filename": "fsaverage_std_sphere.L.164k_fsavg_L.surf.gii",
+    "url": "https://raw.githubusercontent.com/ThomasYeoLab/CBIG/634f676630929a71297852d01dd92a287103e861/data/templates/surface/standard_mesh_atlases_20170508/resample_fsaverage/fsaverage_std_sphere.L.164k_fsavg_L.surf.gii",
+    "sha256": "9bf5b673cc1c4738b1137ac53ff724ff0ef45e12f5550448efa2da50bb521c32"
+  },
+  {
+    "filename": "tpl-fsaverage_hemi-L_den-164k_desc-Hist_G1.shape.gii",
+    "url": "https://fz-juelich.sciebo.de/public.php/dav/files/HoKucnh8zFpSbKF/spaces/tpl-fsaverage/tpl-fsaverage_hemi-L_den-164k_desc-Hist_G1.shape.gii",
+    "sha256": "6fdf1b8fa843d6d525edaa5b7a8376439ee66a6eba7512f8dc0ba2969a261a56"
+  },
+  {
+    "filename": "tpl-fsaverage_hemi-L_den-164k_desc-Micro_G1.curv",
+    "url": "https://fz-juelich.sciebo.de/public.php/dav/files/HoKucnh8zFpSbKF/spaces/tpl-fsaverage/tpl-fsaverage_hemi-L_den-164k_desc-Micro_G1.curv",
+    "sha256": "bfef8014ac8cf39e8ce5149928f9cf470c6ce8902278dfad00d31be19c5d4c05"
+  },
+  {
+    "filename": "tpl-fsaverage_hemi-L_den-164k_desc-sphere.surf.gii",
+    "url": "https://fz-juelich.sciebo.de/public.php/dav/files/HoKucnh8zFpSbKF/spaces/tpl-fsaverage/tpl-fsaverage_hemi-L_den-164k_desc-sphere.surf.gii",
+    "sha256": "66ea67d837d6b8f515cbb50fcf7dc3b1da0ac3d499372d060ca4fc885873c067"
+  }
+]
